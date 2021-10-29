@@ -5,9 +5,23 @@
 <!-- https://github.com/jonasschmedtmann/html-css-course/blob/master/starter/08-Omnifood-Responsive/css/general.css -->
 <style>
 	:global(:root) {
+		/* Define Colors as Colors */
+		--white: #fff;
+		--darkGray: #333;
 		--gray: #555;
 		--teal: #1098ad;
-		/* color: red; */
+		--orange: #e67e22;
+		--darkOrange: #cf711f;
+		--lighterOrange: #fdf2e9;
+
+		/* Define Colors as Intentions */
+		--primary: var(--orange);
+		--headerBackground: var(--lighterOrange);
+	}
+
+	/* Helper classes */
+	:global(.margin-right-sm) {
+		margin-right: 1.6rem !important;
 	}
 
 	:global(*) {
@@ -35,5 +49,25 @@
 		color: var(--gray);
 		/* border-top: 10px solid var(--teal); */
 		/* position: relative; */
+	}
+
+	/* :global(h1, h2, h3) {
+		color: var(--teal);
+	}
+
+	:global(h1) {
+		font-size: 2.6rem;
+		text-transform: uppercase;
+		font-style: italic;
+	}
+
+	:global(h1::first-letter) {
+		font-style: normal;
+		margin-right: 0.5rem;
+	} */
+
+	:global(p) {
+		font-size: 2rem;
+		line-height: 1.6;
 	}
 </style>
