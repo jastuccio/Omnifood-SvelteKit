@@ -43,7 +43,7 @@
 	}
 
 	:global(body) {
-		font-family: sans-serif;
+		font-family: 'Rubik', sans-serif;
 		line-height: 1;
 		font-weight: 400;
 		color: var(--gray);

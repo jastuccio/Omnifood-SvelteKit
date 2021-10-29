@@ -13,6 +13,17 @@
 			</p>
 			<a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
 			<a href="#" class="btn btn--outline">Learn more &darr;</a>
+			<div class="delivered-meals">
+				<div class="delivered-imgs">
+					<img src="img/customers/customer-1.jpg" alt="customer photo" />
+					<img src="img/customers/customer-2.jpg" alt="customer photo" />
+					<img src="img/customers/customer-3.jpg" alt="customer photo" />
+					<img src="img/customers/customer-4.jpg" alt="customer photo" />
+					<img src="img/customers/customer-5.jpg" alt="customer photo" />
+					<img src="img/customers/customer-6.jpg" alt="customer photo" />
+				</div>
+				<p><span>250,000+</span> meals delivered last year!</p>
+			</div>
 		</div>
 
 		<!-- hero-img-box -->
@@ -68,6 +79,7 @@
 		color: var(--white);
 		text-decoration: none;
 		font-size: 2rem;
+		font-weight: 600;
 		padding: 1.6rem 3.2rem;
 		border-radius: 9px;
 
@@ -120,5 +132,38 @@
 
 	nav a:link:last-child {
 		margin-right: 0;
+	}
+
+	.delivered-meals {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		margin-top: 8rem;
+	}
+
+	.delivered-meals p {
+		font-size: 1.8rem;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	.delivered-imgs {
+		display: flex;
+	}
+
+	.delivered-imgs img {
+		height: 4.8rem;
+		width: 4.8rem;
+		border-radius: 50%;
+		margin-right: -1.6rem;
+		border: 3px solid var(--lighterOrange);
+	}
+	.delivered-imgs img:last-child {
+		margin: 0;
+	}
+
+	span {
+		color: var(--darkOrange);
+		font-weight: 700;
 	}
 </style>
